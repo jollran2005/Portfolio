@@ -8,7 +8,7 @@ Hej! Jag studerar mitt andra år på KTH och brinner för nätverksteknik, progr
 
 ### 📧 Kontakt
 - **E-post:** jonas.sedig@icloud.com
-- **LinkedIn:** [Länk till din profil]
+- **LinkedIn:** www.linkedin.com/in/jonas-sedig
 
 ---
 
@@ -24,5 +24,5 @@ Hej! Jag studerar mitt andra år på KTH och brinner för nätverksteknik, progr
 
 ### 🏆 Utmärkelser & Färdigheter
 - **Stipendium:** Mottagare av Joachim Westerlunds Stipendium (fysik/naturvetenskap).
-- **Språk:** Java, Python, C, SQL.
+- **Språk:** Python, Java, C.
 - **Nätverk:** God kännedom om TCP/IP och OSI-modellen.
