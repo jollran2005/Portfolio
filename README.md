@@ -13,13 +13,15 @@ Hej! Jag studerar mitt andra år på KTH och brinner för nätverksteknik, progr
 ---
 
 ### 🚀 Utvalda Projekt (Artefakter)
-🕹️ [Pong-spel för FPGA i kurs IS1200 Datorteknik](https://gits-15.sys.kth.se/jonsed/Pong-IS1200)
+#### 🕹️ Pong-spel för FPGA (Kurs: IS1200 Datorteknik)
+*[Länk till simulerad demo-video](https://youtu.be/HHLjiTD5eXM)*
 
 Detta projekt fungerar som en artefakt för att visa min förmåga att arbeta med lågnivåprogrammering och maskinnära system.
 
 * **Beskrivning:** En implementation av det klassiska spelet Pong för hårdvaruplattformen DE10-Lite (FPGA).
 * **Tekniker:** C, Assembler, VGA-synkronisering, registerprogrammering.
 * **Funktionalitet:** Hantering av realtidsinput, rendering av grafik på VGA-skärm och logik för kollisionshantering.
+* **Viktig information:** Källkoden för detta projekt hålls privat för att följa KTH:s riktlinjer och förhindra otillåtet samarbete i framtida kursomgångar. Koden kan visas upp vid förfrågan.
 
 #### 💡 Reflektion
 Genom detta projekt fick jag en djupare förståelse för hur mjukvara interagerar direkt med hårdvara. Den största utmaningen var att hantera VGA-signalen. Att lyckas optimera koden så att renderingen skedde flimmerfritt var en viktig milstolpe som stärkte min analytiska problemlösningsförmåga.
