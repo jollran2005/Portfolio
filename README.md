@@ -13,7 +13,16 @@ Hej! Jag studerar mitt andra år på KTH och brinner för nätverksteknik, progr
 ---
 
 ### 🚀 Utvalda Projekt (Artefakter)
-*Här lägger du till konkreta exempel på vad du gjort. Som instruktionerna nämner är projektet från åk 2 P4 en utmärkt startpunkt.*
+🕹️ [Pong-spel för FPGA i kurs IS1200 Datorteknik](https://gits-15.sys.kth.se/jonsed/Pong-IS1200)
+
+Detta projekt fungerar som en artefakt för att visa min förmåga att arbeta med lågnivåprogrammering och maskinnära system.
+
+* **Beskrivning:** En implementation av det klassiska spelet Pong för hårdvaruplattformen DE10-Lite (FPGA).
+* **Tekniker:** C, Assembler, VGA-synkronisering, registerprogrammering.
+* **Funktionalitet:** Hantering av realtidsinput, rendering av grafik på VGA-skärm och logik för kollisionshantering.
+
+#### 💡 Reflektion
+Genom detta projekt fick jag en djupare förståelse för hur mjukvara interagerar direkt med hårdvara. Den största utmaningen var att hantera VGA-signalen. Att lyckas optimera koden så att renderingen skedde flimmerfritt var en viktig milstolpe som stärkte min analytiska problemlösningsförmåga.
 
 #### [Projektnamn, t.ex. Nätverksprojekt P4]
 * **Beskrivning:** En kort förklaring av vad projektet gick ut på.
