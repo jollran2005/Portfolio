@@ -10,7 +10,7 @@ Hej! Jag studerar mitt andra år på KTH och brinner för nätverksteknik, progr
 
 ---
 
-### 🚀 Utvalda Projekt (Artefakter)
+### 🚀 Utvalda Projekt
 #### 🕹️ Pong-spel för FPGA (Kurs: IS1200 Datorteknik)
 *[Länk till demo-video på dtek-v emulator](https://youtu.be/HHLjiTD5eXM)*
 
@@ -24,10 +24,33 @@ Detta projekt fungerar som en artefakt för att visa min förmåga att arbeta me
 #### 💡 Reflektion
 Genom detta projekt fick jag en djupare förståelse för hur mjukvara interagerar direkt med hårdvara. Den största utmaningen var att hantera VGA-signalen. Att lyckas optimera koden så att renderingen skedde flimmerfritt var en viktig milstolpe som stärkte min analytiska problemlösningsförmåga.
 
-#### [Projektnamn, t.ex. Nätverksprojekt P4]
-* **Beskrivning:** En kort förklaring av vad projektet gick ut på.
-* **Tekniker:** Java, TCP/UDP, Wireshark.
-* **Reflektion:** Här förklarar du *varför* du gjorde vissa val och vad du lärde dig. Detta ger sammanhang åt din kod och visar din analytiska förmåga.
+### 📚 Relevanta kurser
+*Här lyfter jag fram kurser som lagt den tekniska grunden för min förmåga att arbeta med samhällsviktig infrastruktur och säker kommunikation.*
+
+#### Nätverk och kommunikation (IK1203)
+* **Beskrivning:** Grundläggande principer för datorkommunikation, OSI-modellen, TCP/IP-stacken och nätverkssäkerhet.
+* **Artefakt:** [Beskrivning av nätverkslabb eller protokollsanalys i Wireshark].
+* **Reflektion:** Denna kurs gav mig en djup förståelse för hur data transporteras säkert och effektivt. Att förstå protokoll på djupet är avgörande för att kunna säkerställa driften i de slutna IT-miljöer som Teracom förvaltar.
+
+#### Datorteknik (IS1200)
+* **Beskrivning:** Inbyggda system, lågnivåprogrammering i C och Assembler samt interaktion mellan mjuk- och hårdvara.
+* **Artefakt:** [Pong-projektet för FPGA (se beskrivning ovan)].
+* **Reflektion:** Genom att bygga system från grunden, nära hårdvaran, har jag lärt mig att skriva optimerad kod och felsöka komplexa fel i inbyggda miljöer – en ovärderlig färdighet när man arbetar med kritisk infrastruktur.
+
+#### Signalbehandling (II1303)
+* **Beskrivning:** Analys av signaler och system i både tids- och frekvensplan, filterdesign och digital signalbehandling.
+* **Artefakt:** [Beskrivning av labb i MATLAB eller signalanalys].
+* **Reflektion:** Med tanke på Teracoms rötter i radio- och TV-utsändning har denna kurs gett mig den matematiska förståelsen för hur information moduleras och överförs genom olika medier, vilket är kärnan i trådlös kommunikation.
+
+#### Digital design (IE1204)
+* **Beskrivning:** Konstruktion av digitala system med logiska grindar, flipp-floppar och VHDL-programmering för FPGA.
+* **Artefakt:** [Beskrivning av konstruerad logikkrets eller FPGA-labb].
+* **Reflektion:** Kursen tränade min förmåga att tänka i logiska flöden och förstå hur digital hårdvara är uppbyggd på komponentnivå, vilket ger en stabil grund för att hantera livscykelhantering av teknisk utrustning.
+
+#### Algoritmer och datastrukturer (ID1021)
+* **Beskrivning:** Effektiv problemlösning genom val av rätt datastrukturer och optimering av algoritmer (tid- och minneskomplexitet).
+* **Artefakt:** [Beskrivning av implementerad algoritm, t.ex. sortering eller sökning].
+* **Reflektion:** Att kunna skriva effektiv och skalbar kod är centralt i all systemutveckling. Denna kurs har lärt mig att bryta ner komplexa problem till hanterbara och prestandaoptimerade lösningar.
 
 ---
 
