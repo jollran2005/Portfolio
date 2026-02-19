@@ -14,7 +14,7 @@ Hej! Jag studerar mitt andra år på KTH och brinner för nätverksteknik, progr
 
 ### 🚀 Utvalda Projekt (Artefakter)
 #### 🕹️ Pong-spel för FPGA (Kurs: IS1200 Datorteknik)
-*[Länk till simulerad demo-video](https://youtu.be/HHLjiTD5eXM)*
+*[Länk till demo-video på dtek-v emulator](https://youtu.be/HHLjiTD5eXM)*
 
 Detta projekt fungerar som en artefakt för att visa min förmåga att arbeta med lågnivåprogrammering och maskinnära system.
 
