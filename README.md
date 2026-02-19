@@ -1,7 +1,7 @@
 # Portfolio
 E-portfolio och projektarkiv för Jonas Sedig – Civilingenjörsstudent inom Informationsteknik på KTH.
 
-# Jonas Sedig
+## Jonas Sedig
 **Civilingenjörsstudent inom Informationsteknik | KTH**
 
 Hej! Jag studerar mitt andra år på KTH och brinner för nätverksteknik, programmering och problemlösning. Denna portfölj fungerar som en samling av mina projekt och tekniska erfarenheter.
