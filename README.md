@@ -24,7 +24,7 @@ Detta projekt fungerar som en artefakt för att visa min förmåga att arbeta me
 #### 💡 Reflektion
 Genom detta projekt fick jag en djupare förståelse för hur mjukvara interagerar direkt med hårdvara. Den största utmaningen var att hantera VGA-signalen. Att lyckas optimera koden så att renderingen skedde flimmerfritt var en viktig milstolpe som stärkte min analytiska problemlösningsförmåga.
 
-#### 🔌 Digital design – Laborationsserie (Kurs: IE1204)
+#### 🔌 Kretsar och grindar - laborationer (Kurs: IE1204 Digital Design)
 **[Labb-redovisningar](https://www.youtube.com/playlist?list=PLeNJYwtfAsrL5AWMiNV-1yNhxKpj67W1A)**
 
 Denna spellista innehåller fyra videor där jag redovisar och demonstrerar praktiska lösningar på digitaltekniska problem direkt på hårdvarunivå.
