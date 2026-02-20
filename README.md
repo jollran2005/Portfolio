@@ -14,7 +14,7 @@ Hej! Jag studerar mitt andra år på KTH och brinner för nätverksteknik, progr
 #### 🕹️ Pong-spel för FPGA (Kurs: IS1200 Datorteknik)
 *[Länk till demo-video på dtek-v emulator](https://youtu.be/HHLjiTD5eXM)*
 
-Detta projekt fungerar som en artefakt för att visa min förmåga att arbeta med lågnivåprogrammering och maskinnära system.
+Detta projekt visar min förmåga att arbeta med maskinnära system och att kommunicera tekniska lösningar. Momentet innebar en omfattande **redovisning av kod samt program**, där jag fick förklara logiken och arkitekturen för en granskare.
 
 * **Beskrivning:** En implementation av det klassiska spelet Pong för hårdvaruplattformen DE10-Lite (FPGA).
 * **Tekniker:** C, Assembler, VGA-synkronisering, registerprogrammering.
@@ -34,23 +34,23 @@ Denna spellista innehåller fyra videor där jag redovisar och demonstrerar prak
 * **Artefakt:** En serie redovisningsvideor som visar den fungerande lösningen till labbar inom kursen.
 
 #### 💡 Reflektion
-Genom dessa laborationer fick jag gå från teoretiska sanningstabeller och minimering med K-maps till att faktiskt bygga och verifiera logiken fysiskt. Att arbeta med breadboards har gett mig en djupare förståelse för de fysiska begränsningarna i digital teknik, såsom kontaktproblem och signalintegritet. Det har stärkt min förmåga att metodiskt felsöka hårdvara, en kompetens som är direkt tillämpbar vid underhåll av teknisk utrustning och infrastruktur.
+Genom dessa laborationer fick jag gå från teoretiska sanningstabeller och minimering med K-maps till att faktiskt bygga och verifiera logiken fysiskt. Att metodiskt felsöka fysiska kretsar har lärt mig att förstå hur fel i ett led påverkar hela systemet, vilket är kärnan i effektiv systemadministration.
 
 ### 📚 Relevanta kurser
 *Här lyfter jag fram kurser som lagt den tekniska grunden för min förmåga att arbeta med samhällsviktig infrastruktur och säker kommunikation.*
 
 #### Nätverk och kommunikation (IK1203)
 * **Beskrivning:** Grundläggande principer för datorkommunikation, OSI-modellen, TCP/IP-stacken och nätverkssäkerhet.
-* **Reflektion:** Denna kurs gav mig en djup förståelse för hur data transporteras säkert och effektivt. Att förstå protokoll på djupet är avgörande för att kunna säkerställa driften i de slutna IT-miljöer som Teracom förvaltar.
+* **Reflektion:** Denna kurs gav mig en djup förståelse för hur data transporteras säkert och effektivt.
 
 #### Datorteknik (IS1200)
 * **Beskrivning:** Inbyggda system, lågnivåprogrammering i C och Assembler samt interaktion mellan mjuk- och hårdvara.
 * **Artefakt:** [Pong-projektet för FPGA (se beskrivning ovan)].
-* **Reflektion:** Genom att bygga system från grunden, nära hårdvaran, har jag lärt mig att skriva optimerad kod och felsöka komplexa fel i inbyggda miljöer – en ovärderlig färdighet när man arbetar med kritisk infrastruktur.
+* **Reflektion:** Genom att bygga system från grunden, nära hårdvaran, har jag lärt mig att skriva optimerad kod och felsöka komplexa fel i inbyggda miljöer.
 
 #### Signalbehandling (II1303)
 * **Beskrivning:** Analys av signaler och system i både tids- och frekvensplan, filterdesign och digital signalbehandling.
-* **Reflektion:** Med tanke på Teracoms rötter i radio- och TV-utsändning har denna kurs gett mig den matematiska förståelsen för hur information moduleras och överförs genom olika medier, vilket är kärnan i trådlös kommunikation.
+* **Reflektion:** Matematisk förståelse för informationsöverföring, relevant för energibolagets kommunikationsnät.
 
 #### Digital design (IE1204)
 * **Beskrivning:** Konstruktion av digitala system med logiska grindar, flipp-floppar och VHDL-programmering för FPGA.
@@ -60,7 +60,7 @@ Genom dessa laborationer fick jag gå från teoretiska sanningstabeller och mini
 #### Algoritmer och datastrukturer (ID1021)
 * **Beskrivning:** Effektiv problemlösning genom val av rätt datastrukturer och optimering av algoritmer (tid- och minneskomplexitet).
 * **Artefakt:** [Beskrivning av implementerad algoritm, t.ex. sortering eller sökning].
-* **Reflektion:** Att kunna skriva effektiv och skalbar kod är centralt i all systemutveckling. Denna kurs har lärt mig att bryta ner komplexa problem till hanterbara och prestandaoptimerade lösningar.
+* **Reflektion:** Att kunna skriva effektiv och skalbar kod är centralt i all systemutveckling. Jag har i denna kurs fått träna min förmåga att bryta ner komplexa system i logiska, effektiva delar.
 
 ---
 
