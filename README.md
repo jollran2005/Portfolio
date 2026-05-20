@@ -1,5 +1,5 @@
 # E-portfolio & Projektarkiv – Jonas Sedig
-**Civilingenjörsstudent inom Informationsteknik | KTH**
+**Civilingenjörsstudent inom Informationsteknik | KTH (Årskurs 2)**
 
 Hej! Denna portfölj fungerar som en konkret samling av mina tekniska verk och praktiska prestationer. Mitt fokus ligger på nätverksteknik, maskinnära programmering och systemförståelse. 
 
@@ -21,46 +21,65 @@ Hej! Denna portfölj fungerar som en konkret samling av mina tekniska verk och p
 - **Källkod:** [gits-15.sys.kth.se/jonsed/Pong-IS1200](https://gits-15.sys.kth.se/jonsed/Pong-IS1200)
 
 ##### 🛠️ Arkitektur och Kodstruktur
-Kärnan i projektet handlar om att hantera VGA-skärmens tidskritiska synkroniseringssignaler (H-SYNC och V-SYNC) utan färdiga operativsystembibliotek. Nedan visas ett konkret exempel på hur vi strukturerade initieringen av drivrutinen och renderingen av spelplanen i C:
+Kärnan i min del av projektet handlade om att hantera VGA-skärmens grafik och tidskritiska synkroniseringssignaler utan färdiga operativsystembibliotek. Nedan visas ett konkret exempel från min källkod på hur jag ritade ut grafik direkt i videominnet (framebuffern) och synkroniserade detta med hårdvaran:
 
 ```c
-// Exempel på registerprogrammering för rendering av spelplan
-void draw_paddle(int x_pos, int y_pos, uint32_t color) {
-    volatile uint32_t* vga_mem = (volatile uint32_t*) VGA_BASE_ADDRESS;
-    for (int i = 0; i < PADDLE_HEIGHT; i++) {
-        for (int j = 0; j < PADDLE_WIDTH; j++) {
-            // Beräkna pixeloffset i videominnet och skriv färgdata direkt till hårdvaran
-            int offset = (y_pos + i) * SCREEN_WIDTH + (x_pos + j);
-            *(vga_mem + offset) = color;
+#define VBLANK_BIT_MASK (0x1) 
+
+// Synkroniserar ritningen med skärmens uppdateringsfrekvens för att undvika flimmer
+void wait_for_vblank(void) {
+    while (!(VGA_CTRL[REG_OFFSET_STATUS] & VBLANK_BIT_MASK)) {}
+    while (VGA_CTRL[REG_OFFSET_STATUS] & VBLANK_BIT_MASK) {}
+}
+
+// Skriver färgdata direkt till videominnet
+void put_pixel(int x, int y, uint16_t color) {
+    if (x < 0 || x >= WIDTH || y < 0 || y >= HEIGHT) return;
+    VGA_PIXEL_DATA[y * WIDTH + x] = color;
+}
+
+// Ritar rektanglar (t.ex. spelarpaddlar och bollen) genom att anropa put_pixel
+void draw_rectangle(int x, int y, int w, int h, uint16_t color) {
+    for (int j = 0; j < h; j++) {
+        for (int i = 0; i < w; i++) {
+            put_pixel(x + i, y + j, color);
         }
     }
 }
 ```
 
 ##### 💡 Analytisk Reflektion
-Den största utmaningen var att optimera kollisionshanteringen så att den inte blockerade renderingsloopen, vilket initialt orsakade flimmer på VGA-skärmen. Genom att flytta input-avläsningen till hårdvaru-interrupts (avbrottshantering) istället för kontinuerlig polling lyckades vi frigöra tillräckligt med klockcykler för att uppnå a stabil bilduppdatering.
+Den största utmaningen var att uppdatera skärmen snabbt nog utan att orsaka flimmer eller att grafiken "bröts" (tearing). Lösningen blev att implementera `wait_for_vblank`-funktionen, som pollar VGA-kontrollerns statusregister och väntar in skärmens vertikala synkronisering (V-blank) innan nästa bildruta ritas. Att arbeta så här nära hårdvaruregister har gett mig en mycket bättre förståelse för hur minneshantering och I/O-system fungerar i praktiken.
 
 ---
 
-#### 🔌 Fysisk Hårdvara: Laborationsserie i Digital Design (Kurs: IE1204)
-*En rad olika laborationer som demonstrerar min förmåga att gå från teoretisk logik till fysisk konstruktion och systematisk hårdvarufelsökning.*
+#### 🔌 Fysisk Hårdvara: Konstruktion av Sekvenskretsar (Kurs: IE1204)
+*Denna laboration demonstrerar min förmåga att gå från teoretisk logik och simulering till systematisk maskinvarufelsökning av en Finite State Machine (FSM).*
 
-- **Koncept:** CMOS-teknik, Karnaughdiagram (K-maps), sanningstabeller, multiplexers och sekvenskretsar.
+- **Koncept:** CMOS-teknik, Karnaughdiagram (K-maps), multiplexers (74HC253), D-vippor (74HC74) och boolesk minimering.
 - **Konkret Verk:** [Laborationsredovisningar (YouTube-spellista)](https://www.youtube.com/playlist?list=PLeNJYwtfAsrL5AWMiNV-1yNhxKpj67W1A)
 
-##### 📐 Konstruktionsmetodik (Problem till Lösning)
-Varje laboration byggde på att minimera boolesk algebra för att minimera antalet fysiska grindar. Nedan visas principskissen för den logiska designen för en 4-till-1 multiplexer som användes för att styra signalflödena på breadboardet:
+##### 📐 Konstruktionsmetodik (Teori till Praktik)
+Processen inleddes med att översätta ett state-diagram till ett Karnaughdiagram för att minimera antalet logiska grindar som krävdes för att styra kretsens tillstånd.
 
-```text
-Teoretisk minimering via K-map:
-Y = (A • B • S1) + (C • D • S2) ... 
+*(Exempel på boolesk minimering via K-map för tillstånd q<sub>1</sub><sup>+</sup>)*
 
-Fysisk implementation på breadboard:
-[Input signaler] ---> [AND-grindar (74LS08)] ---> [OR-grind (74LS32)] ---> [Utgång LED]
-```
+![K-map minimering](kmap.png) 
+
+Den minimerade logiken simulerades därefter i Logisim för att verifiera funktionaliteten hos de dubbla 4:1 multiplexerna innan den fysiska implementationen påbörjades. 
+
+*(Schematisk simulering i Logisim)*
+
+![Logisim kretsschema](logisim.png)
+
+Till sist byggdes kretsen fysiskt på breadboard med standard-IC-komponenter för styrning och logik, samt knappar och LEDs (röda och gröna) för in- och utmatning.
+
+*(Färdigbyggd sekvenskrets)*
+
+![Fysiskt breadboard](breadboard.png)
 
 ##### 💡 Analytisk Reflektion
-Arbetet med fysiska IC-kretsar på breadboards gav mig en djup förståelse för signalintegritet och kontaktproblem. Att felsöka en krets där en glappkontakt eller en felaktig CMOS-nivå sänker hela logikflödet kräver ett extremt metodiskt tillvägagångssätt. Denna erfarenhet har gett mig en stabil grund för att förstå hårdvarans livscykelhantering och fysisk IT-infrastruktur.
+Den stora utmaningen med laborationen var att koppla `select`-signalerna till multiplexerna korrekt, vilket inledningsvis orsakade felaktiga tillståndshopp. Genom metodisk felsökning identifierade och löste jag problemet. Att fysiskt bygga och felsöka dessa kretsar lärde mig hur flera komplexa komponenter, som multiplexrar, måste samspela felfritt i ett system, vilket är en avgörande lärdom för all typ av system- och nätverksadministration.
 
 ---
 
