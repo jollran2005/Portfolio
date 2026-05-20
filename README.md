@@ -43,7 +43,7 @@ Den största utmaningen var att optimera kollisionshanteringen så att den inte 
 ---
 
 #### 🔌 Fysisk Hårdvara: Laborationsserie i Digital Design (Kurs: IE1204)
-*En serie verk som demonstrerar min förmåga att gå från teoretisk logik till fysisk konstruktion och systematisk hårdvarufelsökning.*
+*En rad olika laborationer som demonstrerar min förmåga att gå från teoretisk logik till fysisk konstruktion och systematisk hårdvarufelsökning.*
 
 - **Koncept:** CMOS-teknik, Karnaughdiagram (K-maps), sanningstabeller, multiplexers och sekvenskretsar.
 - **Konkret Verk:** [Laborationsredovisningar (YouTube-spellista)](https://www.youtube.com/playlist?list=PLeNJYwtfAsrL5AWMiNV-1yNhxKpj67W1A)
