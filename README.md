@@ -21,7 +21,7 @@ Hej! Denna portfölj fungerar som en konkret samling av mina tekniska verk och p
 - **Källkod:** [gits-15.sys.kth.se/jonsed/Pong-IS1200](https://gits-15.sys.kth.se/jonsed/Pong-IS1200)
 
 ##### 🛠️ Arkitektur och Kodstruktur
-Kärnan i projektet handlar om att hantera VGA-skärmens tidskritiska synkroniseringssignaler (H-SYNC och V-SYNC) utan färdiga operativsystembibliotek. Nedan visas ett konkret exempel på hur jag strukturerade initieringen av drivrutinen och renderingen av spelplanen i C:
+Kärnan i projektet handlar om att hantera VGA-skärmens tidskritiska synkroniseringssignaler (H-SYNC och V-SYNC) utan färdiga operativsystembibliotek. Nedan visas ett konkret exempel på hur vi strukturerade initieringen av drivrutinen och renderingen av spelplanen i C:
 
 ```c
 // Exempel på registerprogrammering för rendering av spelplan
@@ -38,7 +38,7 @@ void draw_paddle(int x_pos, int y_pos, uint32_t color) {
 ```
 
 ##### 💡 Analytisk Reflektion
-Den största utmaningen var att optimera kollisionshanteringen så att den inte blockerade renderingsloopen, vilket initialt orsakade flimmer på VGA-skärmen. Genom att flytta input-avläsningen till hårdvaru-interrupts (avbrottshantering) istället för kontinuerlig polling lyckades jag frigöra tillräckligt med klockcykler för att uppnå a stabil bilduppdatering.
+Den största utmaningen var att optimera kollisionshanteringen så att den inte blockerade renderingsloopen, vilket initialt orsakade flimmer på VGA-skärmen. Genom att flytta input-avläsningen till hårdvaru-interrupts (avbrottshantering) istället för kontinuerlig polling lyckades vi frigöra tillräckligt med klockcykler för att uppnå a stabil bilduppdatering.
 
 ---
 
