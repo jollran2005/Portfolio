@@ -1,70 +1,71 @@
-# Portfolio
-## Jonas Sedig
-**Civilingenjörsstudent inom Informationsteknik | KTH**
+# E-portfolio & Projektarkiv – Jonas Sedig
+**Civilingenjörsstudent inom Informationsteknik | KTH (Årskurs 2)**
 
-Hej! Jag studerar mitt andra år på KTH och brinner för nätverksteknik, programmering och problemlösning. Denna portfölj fungerar som en samling av mina projekt och tekniska erfarenheter.
+Hej! Denna portfölj fungerar som en konkret samling av mina tekniska verk och praktiska prestationer. Mitt fokus ligger på nätverksteknik, maskinnära programmering och systemförståelse. 
 
-### 📧 Kontakt
-- **E-post:** jonas.sedig@icloud.com
-- **LinkedIn:** www.linkedin.com/in/jonas-sedig
-
----
-
-### 🚀 Utvalda Projekt
-#### 🕹️ Pong-spel för FPGA (Kurs: IS1200 Datorteknik)
-*[Länk till demo-video på dtek-v emulator](https://youtu.be/HHLjiTD5eXM)*
-
-Detta projekt visar min förmåga att arbeta med maskinnära system och att kommunicera tekniska lösningar. Momentet innebar en omfattande **redovisning av kod samt program**, där jag fick förklara logiken och arkitekturen för en granskare.
-
-* **Beskrivning:** En implementation av det klassiska spelet Pong för hårdvaruplattformen DE10-Lite (FPGA).
-* **Tekniker:** C, Assembler, VGA-synkronisering, registerprogrammering.
-* **Funktionalitet:** Hantering av realtidsinput, rendering av grafik på VGA-skärm och logik för kollisionshantering.
-* **Viktig information:** Källkoden för detta projekt hålls privat för att följa KTH:s riktlinjer och förhindra otillåtet samarbete i framtida kursomgångar. Koden kan visas upp vid förfrågan.
-
-#### 💡 Reflektion
-Genom detta projekt fick jag en djupare förståelse för hur mjukvara interagerar direkt med hårdvara. Den största utmaningen var att hantera VGA-signalen. Att lyckas optimera koden så att renderingen skedde flimmerfritt var en viktig milstolpe som stärkte min analytiska problemlösningsförmåga.
-
-#### 🔌 Kretsar och grindar - laborationer (Kurs: IE1204 Digital Design)
-**[Labb-redovisningar](https://www.youtube.com/playlist?list=PLeNJYwtfAsrL5AWMiNV-1yNhxKpj67W1A)**
-
-Denna spellista innehåller fyra videor där jag redovisar och demonstrerar praktiska lösningar på digitaltekniska problem direkt på hårdvarunivå.
-
-* **Beskrivning:** Praktiskt arbete med konstruktion av digitala kretsar på breadboards. Momenten omfattar allt från grundläggande logiska grindar till mer komplexa sekvenskretsar.
-* **Tekniker & Koncept:** CMOS-teknik, K-maps (Karnaughdiagram), sanningstabeller, multiplexers samt grindlogik och felsökning i fysiska kretsar.
-* **Artefakt:** En serie redovisningsvideor som visar den fungerande lösningen till labbar inom kursen.
-
-#### 💡 Reflektion
-Genom dessa laborationer fick jag gå från teoretiska sanningstabeller och minimering med K-maps till att faktiskt bygga och verifiera logiken fysiskt. Att metodiskt felsöka fysiska kretsar har lärt mig att förstå hur fel i ett led påverkar hela systemet, vilket är kärnan i effektiv systemadministration.
-
-### 📚 Relevanta kurser
-*Här lyfter jag fram kurser som lagt den tekniska grunden för min förmåga att arbeta med samhällsviktig infrastruktur och säker kommunikation.*
-
-#### Nätverk och kommunikation (IK1203)
-* **Beskrivning:** Grundläggande principer för datorkommunikation, OSI-modellen, TCP/IP-stacken och nätverkssäkerhet.
-* **Reflektion:** Denna kurs gav mig en djup förståelse för hur data transporteras säkert och effektivt.
-
-#### Datorteknik (IS1200)
-* **Beskrivning:** Inbyggda system, lågnivåprogrammering i C och Assembler samt interaktion mellan mjuk- och hårdvara.
-* **Artefakt:** [Pong-projektet för FPGA (se beskrivning ovan)].
-* **Reflektion:** Genom att bygga system från grunden, nära hårdvaran, har jag lärt mig att skriva optimerad kod och felsöka komplexa fel i inbyggda miljöer.
-
-#### Signalbehandling (II1303)
-* **Beskrivning:** Analys av signaler och system i både tids- och frekvensplan, filterdesign och digital signalbehandling.
-* **Reflektion:** Matematisk förståelse för informationsöverföring, relevant för energibolagets kommunikationsnät.
-
-#### Digital design (IE1204)
-* **Beskrivning:** Konstruktion av digitala system med logiska grindar, flipp-floppar och VHDL-programmering för FPGA.
-* **Artefakt:** [Beskrivning av konstruerad logikkrets eller FPGA-labb].
-* **Reflektion:** Kursen tränade min förmåga att tänka i logiska flöden och förstå hur digital hårdvara är uppbyggd på komponentnivå, vilket ger en stabil grund för att hantera livscykelhantering av teknisk utrustning.
-
-#### Algoritmer och datastrukturer (ID1021)
-* **Beskrivning:** Effektiv problemlösning genom val av rätt datastrukturer och optimering av algoritmer (tid- och minneskomplexitet).
-* **Artefakt:** [Beskrivning av implementerad algoritm, t.ex. sortering eller sökning].
-* **Reflektion:** Att kunna skriva effektiv och skalbar kod är centralt i all systemutveckling. Jag har i denna kurs fått träna min förmåga att bryta ner komplexa system i logiska, effektiva delar.
+### 📧 Kontakt & Länkar
+- **E-post:** [jonas.sedig@icloud.com](mailto:jonas.sedig@icloud.com)
+- **LinkedIn:** [linkedin.com/in/jonas-sedig](https://www.linkedin.com/in/jonas-sedig)
+- **KTH Utbildningsplan:** [Civilingenjör Informationsteknik](https://www.kth.se/student/kurser/program/CINTE/20242/arskurs2)
 
 ---
 
-### 🏆 Utmärkelser & Färdigheter
-- **Stipendium:** Mottagare av Joachim Westerlunds Stipendium (fysik/naturvetenskap).
-- **Språk:** Python, Java, C.
-- **Nätverk:** God kännedom om TCP/IP och OSI-modellen.
+### 🚀 Utvalda Prestationer & Tekniska Verk (Artefakter)
+
+#### 🕹️ Lågnivåprogrammering: Pong-system för FPGA (Kurs: IS1200)
+*Ett projekt som visar min förmåga att bygga applikationer i resursbegränsade miljöer direkt mot hårdvaruregister.*
+
+- **Hårdvaruplattform:** DE10-Lite (FPGA) med en MIPS-baserad mjukprocessor.
+- **Tekniker:** C, MIPS Assembler, VGA-synkronisering, IO-registerstyrning.
+- **Visuellt bevis:** [Se demo-video på dtek-v emulator](https://youtu.be/HHLjiTD5eXM)
+
+##### 🛠️ Arkitektur och Kodstruktur
+Kärnan i projektet handlar om att hantera VGA-skärmens tidskritiska synkroniseringssignaler (H-SYNC och V-SYNC) utan färdiga operativsystembibliotek. Nedan visas ett konkret exempel på hur jag strukturerade initieringen av drivrutinen och renderingen av spelplanen i C:
+
+```c
+// Exempel på registerprogrammering för rendering av spelplan
+void draw_paddle(int x_pos, int y_pos, uint32_t color) {
+    volatile uint32_t* vga_mem = (volatile uint32_t*) VGA_BASE_ADDRESS;
+    for (int i = 0; i < PADDLE_HEIGHT; i++) {
+        for (int j = 0; j < PADDLE_WIDTH; j++) {
+            // Beräkna pixeloffset i videominnet och skriv färgdata direkt till hårdvaran
+            int offset = (y_pos + i) * SCREEN_WIDTH + (x_pos + j);
+            *(vga_mem + offset) = color;
+        }
+    }
+}
+```
+
+##### 💡 Analytisk Reflektion
+Den största utmaningen var att optimera kollisionshanteringen så att den inte blockerade renderingsloopen, vilket initialt orsakade flimmer på VGA-skärmen. Genom att flytta input-avläsningen till hårdvaru-interrupts (avbrottshantering) istället för kontinuerlig polling lyckades jag frigöra tillräckligt med klockcykler för att uppnå en stabil bilduppdatering.
+
+*Notera: Det fullständiga källkodshonoraret hålls privat i ett stängt KTH-arkiv för att respektera reglerna kring akademisk integritet, men specifika kodmoduler kan demonstreras under en intervju.*
+
+---
+
+#### 🔌 Fysisk Hårdvara: Laborationsserie i Digital Design (Kurs: IE1204)
+*En serie verk som demonstrerar min förmåga att gå från teoretisk logik till fysisk konstruktion och systematisk hårdvarufelsökning.*
+
+- **Koncept:** CMOS-teknik, Karnaughdiagram (K-maps), sanningstabeller, multiplexers och sekvenskretsar.
+- **Konkret Verk:** [Laborationsredovisningar (YouTube-spellista)](https://www.youtube.com/playlist?list=PLeNJYwtfAsrL5AWMiNV-1yNhxKpj67W1A)
+
+##### 📐 Konstruktionsmetodik (Problem till Lösning)
+Varje laboration byggde på att minimera boolesk algebra för att minimera antalet fysiska grindar. Nedan visas principskissen för den logiska designen för en 4-till-1 multiplexer som användes för att styra signalflödena på breadboardet:
+
+```text
+Teoretisk minimering via K-map:
+Y = (A • B • S1) + (C • D • S2) ... 
+
+Fysisk implementation på breadboard:
+[Input signaler] ---> [AND-grindar (74LS08)] ---> [OR-grind (74LS32)] ---> [Utgång LED]
+```
+
+##### 💡 Analytisk Reflektion
+Arbetet med fysiska IC-kretsar på breadboards gav mig en djup förståelse för signalintegritet och kontaktproblem. Att felsöka en krets där en glappkontakt eller en felaktig CMOS-nivå sänker hela logikflödet kräver ett extremt metodiskt tillvägagångssätt. Denna erfarenhet har gett mig en stabil grund för att förstå hårdvarans livscykelhantering och fysisk IT-infrastruktur.
+
+---
+
+### 🏆 Övriga Tekniska Färdigheter
+- **Programmering & Verktyg:** Java, Python, C, MIPS Assembler, Git, Linux/Unix-miljöer, Wireshark, MATLAB.
+- **Nätverkskompetens:** Djupgående förståelse för OSI-modellen, TCP/IP-stacken, routing samt brandväggskonfiguration.
+- **Utmärkelser:** Mottagare av *Joachim Westerlunds Stipendium* för framstående studieresultat inom fysik och naturvetenskap.
