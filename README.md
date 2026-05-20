@@ -18,6 +18,7 @@ Hej! Denna portfölj fungerar som en konkret samling av mina tekniska verk och p
 - **Hårdvaruplattform:** DE10-Lite (FPGA) med en MIPS-baserad mjukprocessor.
 - **Tekniker:** C, MIPS Assembler, VGA-synkronisering, IO-registerstyrning.
 - **Visuellt bevis:** [Se demo-video på dtek-v emulator](https://youtu.be/HHLjiTD5eXM)
+- **Källkod:** [gits-15.sys.kth.se/jonsed/Pong-IS1200](https://gits-15.sys.kth.se/jonsed/Pong-IS1200)
 
 ##### 🛠️ Arkitektur och Kodstruktur
 Kärnan i projektet handlar om att hantera VGA-skärmens tidskritiska synkroniseringssignaler (H-SYNC och V-SYNC) utan färdiga operativsystembibliotek. Nedan visas ett konkret exempel på hur jag strukturerade initieringen av drivrutinen och renderingen av spelplanen i C:
@@ -37,9 +38,7 @@ void draw_paddle(int x_pos, int y_pos, uint32_t color) {
 ```
 
 ##### 💡 Analytisk Reflektion
-Den största utmaningen var att optimera kollisionshanteringen så att den inte blockerade renderingsloopen, vilket initialt orsakade flimmer på VGA-skärmen. Genom att flytta input-avläsningen till hårdvaru-interrupts (avbrottshantering) istället för kontinuerlig polling lyckades jag frigöra tillräckligt med klockcykler för att uppnå en stabil bilduppdatering.
-
-*Notera: Det fullständiga källkodshonoraret hålls privat i ett stängt KTH-arkiv för att respektera reglerna kring akademisk integritet, men specifika kodmoduler kan demonstreras under en intervju.*
+Den största utmaningen var att optimera kollisionshanteringen så att den inte blockerade renderingsloopen, vilket initialt orsakade flimmer på VGA-skärmen. Genom att flytta input-avläsningen till hårdvaru-interrupts (avbrottshantering) istället för kontinuerlig polling lyckades jag frigöra tillräckligt med klockcykler för att uppnå a stabil bilduppdatering.
 
 ---
 
